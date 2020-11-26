@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../monstyle.css">
+    <link rel="stylesheet" href="../navstyle.css">
+    <script src="../monscript.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!---------------------- menu de navigation --------->
+    <button id="open" href="#"><img id="hamb1" src="../images/hamburger.png"></button>
+    <nav id="menu">
+        <button id="close" href="#"><img id="hamb2" src="../images/close.png"></button>
+
+        <ul class="nav-ul">
+            <li class="nav-list"><a href="../index.html">Accueil</a></li>
+            <li class="nav-list"><a href="#">Services</a></li>
+            <li class="nav-list"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!------------- contenu de la page------------- -->
+
+    <div id="contenu">
+
+        <div class="titre_section">Qui est M&N Transports?</div>
+        <b class="titre_section">Présentation</b>
+
+    </div>
+
+    <div id="contenu">
+
+        <div class="bloc_service">
+            <p class="text_service">
+                <b class="titre_section">Transports de marchandises</b><br><br>
+                M&N transports est spécialisé dane le transport de colie en region
+                parisienne, en province et en blegique.
+            </p>
+            <img src="../images/carnet.jpg" alt="" class="image_service">
+        </div>
+
+        <div class="bloc_service">
+            <p class="text_service">
+                <b class="titre_section">Manutention</b><br><br>
+                Nous nous occupons de charger votre marchandise en toute securité.
+            </p>
+            <img src="../images/transpallette.jpg" alt="" class="image_service">
+        </div>
+
+        <div class="bloc_service">
+            <p class="text_service">
+                <b class="titre_section">Véhicule avec hayon</b><br><br>
+                Nos Véhicule sont equipés de hayon qui permet de charger vos marchandises, même les plus fragile en
+                toutes
+                sécurité.
+            </p>
+            <img src="../images/hayon.jpg" alt="" class="image_service">
+        </div>
+    </div>
+
+
+    <script> type = "text/javascript" >
+            jQuery(document).ready(function ($) {
+
+                $("#open").click(function () {
+                    $("nav").addClass("op");
+                });
+
+                $("#close").click(function () {
+                    $("nav").removeClass("op");
+                });
+            });
+    </script>
+
+
+</body>
+
+
+</html>
